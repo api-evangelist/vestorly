@@ -1,0 +1,2965 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Vestorly API",
+        "description": "Vestorly Developers API",
+        "termsOfService": "http:\/\/www.vestorly.com\/terms\/"
+    },
+    "servers": [
+        "http:\/\/staging.vestorly.com\/api\/v2"
+    ],
+    "paths": {
+        "\/advisors\/{id}": {
+            "get": {
+                "summary": "",
+                "description": "Returns a single advisor given their ID",
+                "operationId": "FindAdvisorByID",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Advisor Id to fetch"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/articles": {
+            "get": {
+                "summary": "",
+                "description": "Returns all articles",
+                "operationId": "FindArticles",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit on the number of articles to return"
+                    },
+                    {
+                        "name": "text_query",
+                        "in": "query",
+                        "description": "Search query parameter"
+                    },
+                    {
+                        "name": "sort_direction",
+                        "in": "query",
+                        "description": "Direction of sort (used with sort_by parameter)"
+                    },
+                    {
+                        "name": "sort_by",
+                        "in": "query",
+                        "description": "Field on model to sort by"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/articles\/{id}": {
+            "get": {
+                "summary": "",
+                "description": "Returns a single article",
+                "operationId": "FindArticleByID",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Advisor Id to fetch"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/events": {
+            "get": {
+                "summary": "",
+                "description": "Returns all events",
+                "operationId": "FindEvents",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "",
+                "description": "Creates a new event in the system",
+                "operationId": "CreateEvent",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/events\/{id}": {
+            "get": {
+                "summary": "",
+                "description": "Returns a single event if the user has access",
+                "operationId": "FindEventByID",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Advisor Id to fetch"
+                    },
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/groups": {
+            "get": {
+                "summary": "",
+                "description": "Returns all groups",
+                "operationId": "FindGroups",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "",
+                "description": "Creates a new Group",
+                "operationId": "CreateGroup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/groups\/{id}": {
+            "delete": {
+                "summary": "",
+                "description": "Deletes a Group",
+                "operationId": "DeleteGroup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Advisor Id to fetch"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns a single group if user has access",
+                "operationId": "FindGroupByID",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Advisor Id to fetch"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "",
+                "description": "Updates a Group",
+                "operationId": "UpdateGroupById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Advisor Id to fetch"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/member_events": {
+            "get": {
+                "summary": "",
+                "description": "Returns all MemberEvents",
+                "operationId": "FindMemberEvents",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/member_reports": {
+            "get": {
+                "summary": "",
+                "description": "Returns all member reports",
+                "operationId": "FindMemberReports",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/members": {
+            "get": {
+                "summary": "",
+                "description": "Returns all members",
+                "operationId": "FindMembers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "",
+                "description": "Create a new member in the Vestorly Platform",
+                "operationId": "CreateMember",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/members\/{id}": {
+            "get": {
+                "summary": "",
+                "description": "Returns a single member",
+                "operationId": "FindMemberByID",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Advisor Id to fetch"
+                    },
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "",
+                "description": "Updates a single member",
+                "operationId": "UpdateMemberByID",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Advisor Id to fetch"
+                    },
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/newsletter_settings": {
+            "get": {
+                "summary": "",
+                "description": "Returns all newsletter settings",
+                "operationId": "FindNewsletterSettings",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/newsletter_settings\/{id}": {
+            "get": {
+                "summary": "",
+                "description": "Returns a single newsletter settings if the user has access",
+                "operationId": "FindNewsletterSettingsByID",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Advisor Id to fetch"
+                    },
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "",
+                "description": "Update a single newsletter setting by ID",
+                "operationId": "UpdateNewsletterSettingsByID",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Advisor Id to fetch"
+                    },
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/newsletters": {
+            "get": {
+                "summary": "",
+                "description": "Returns all newsletters",
+                "operationId": "FindNewsletters",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/newsletters\/{id}": {
+            "get": {
+                "summary": "",
+                "description": "Get a newsletter by ID",
+                "operationId": "GetNewsletterByID",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Advisor Id to fetch"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "",
+                "description": "Updates a newsletter",
+                "operationId": "UpdateNewsletterByID",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Advisor Id to fetch"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/posts": {
+            "get": {
+                "summary": "",
+                "description": "Query all posts",
+                "operationId": "FindPosts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    },
+                    {
+                        "name": "text_query",
+                        "in": "query",
+                        "description": "Search query parameter"
+                    },
+                    {
+                        "name": "external_url",
+                        "in": "query",
+                        "description": "Filter by External URL"
+                    },
+                    {
+                        "name": "is_published",
+                        "in": "query",
+                        "description": "Filter by is_published boolean"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "",
+                "description": "Create a new post in the Vestorly Platform",
+                "operationId": "CreatePost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/posts\/{id}": {
+            "get": {
+                "summary": "",
+                "description": "Query all posts",
+                "operationId": "GetPostByID",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Advisor Id to fetch"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "",
+                "description": "Update A Post",
+                "operationId": "UpdatePostByID",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Advisor Id to fetch"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/sessions": {
+            "post": {
+                "summary": "",
+                "description": "Login To Vestorly Platform",
+                "operationId": "Login",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "query",
+                        "description": "Username in the vestorly platform"
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "Password in Vestorly Platform"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/sessions\/{id}": {
+            "delete": {
+                "summary": "",
+                "description": "Logout of the vestorly platform",
+                "operationId": "Logout",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Advisor Id to fetch"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/sources": {
+            "get": {
+                "summary": "",
+                "description": "Returns all sources",
+                "operationId": "FindSources",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "",
+                "description": "Create source",
+                "operationId": "CreateSource",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/sources\/{id}": {
+            "get": {
+                "summary": "",
+                "description": "Get Source By ID",
+                "operationId": "GetSourceByID",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Advisor Id to fetch"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "",
+                "description": "Update Source By ID",
+                "operationId": "UpdateSourceByID",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "vestorly_auth",
+                        "in": "query",
+                        "description": "Vestorly Auth Token"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Advisor Id to fetch"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Advisor response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Advisor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Advisor": {
+                "type": "object",
+                "properties": {
+                    "about": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "account_type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "address": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "adv_brochure": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "advisor_employees": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "api_key": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "city": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "company": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "compliance_bcc_email_address": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "consultation_reminder": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "dashboard_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "disclosure": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "email_blast": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "email_report_blast": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "external_options": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "facebook_blast": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "first_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "linkedin": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "linkedin_blast": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "logo": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "other_compensation": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "other_services_types": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "performance_audited": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "plan": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "profile_picture": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "referral_reminder": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "reg_number": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "state": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "tag": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "twitter_blast": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "twitter_handle": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "website": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "weekly_email_blast": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "zip": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Advisorresponse": {
+                "type": "object",
+                "properties": {
+                    "Advisor": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "advisor": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Advisors": {
+                "type": "object",
+                "properties": {
+                    "advisors": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "advisors": {
+                "type": "array"
+            },
+            "Article": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "body": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "external_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "external_url_source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "external_url_type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "image_height": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "image_path": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "image_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "image_width": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "is_mobile_proxy_needed": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "is_proxy_needed": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "is_responsive": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "logo_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "needs_sanitize": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "proxy_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "square_logo_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "suitability_score": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "summary": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "topic": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Articleresponse": {
+                "type": "object",
+                "properties": {
+                    "Article": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "article": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Articles": {
+                "type": "object",
+                "properties": {
+                    "articles": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "articles": {
+                "type": "array"
+            },
+            "Event": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "advisor_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "event_content": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "original_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "originator_email": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "originator_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "parent_event_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "referer": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "subject_email": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "subject_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "event_content": {
+                "type": "object"
+            },
+            "EventContent": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "content_field": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "content_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "content_type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "updated_at": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Eventcreateresponse": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "meta": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "EventInput": {
+                "type": "object",
+                "properties": {
+                    "advisor_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "EventContent": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "event_content": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "original_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "originator_email": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "originator_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "parent_event_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "referer": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "subject_email": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "subject_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Eventresponse": {
+                "type": "object",
+                "properties": {
+                    "Event": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "event": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Events": {
+                "type": "object",
+                "properties": {
+                    "events": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "events": {
+                "type": "array"
+            },
+            "Features": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Group": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "autopublish": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "is_default": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "is_hidden": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "new_weekly_mailer_content": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "newsletter_subject": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "number_articles_per_group": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "number_articles_per_newsletter": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "GroupInput": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "autopublish": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "is_default": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "is_hidden": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "new_weekly_mailer_content": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "newsletter_subject": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "number_articles_per_group": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "number_articles_per_newsletter": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "Groupresponse": {
+                "type": "object",
+                "properties": {
+                    "Group": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "group": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Groups": {
+                "type": "object",
+                "properties": {
+                    "groups": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "groups": {
+                "type": "array"
+            },
+            "Member": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "address": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "age": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "assets": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "city": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "data_estimated": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "education": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "estimated_location": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "estimated_zip": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "family": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "first_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "gender": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "genuine_email": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "high_net_worth": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "home_market_value": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "home_owner_status": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "hometown": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "household_income": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "interest_consultation": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "interest_in_new_advisor": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "invited_by": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "invited_on": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "is_client": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "is_hidden": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "last_active_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "location": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "marital_status": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "occupation": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "phone": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "picture_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "portfolio_size": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "profile_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "register_ip_addr": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "signed_up_with": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "state": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "subscribed_group_ids": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "tags": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "unsubscribed": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "unsubscribed_date": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "user_type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "zip": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "subscribed_group_ids": {
+                "type": "array"
+            },
+            "tags": {
+                "type": "array"
+            },
+            "MemberEvent": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "content_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "event_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "event_source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "event_type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "member_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "original_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "originator_email": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "originator_group_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "originator_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "originator_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "originator_type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "parent_event_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "parent_originator_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "referer": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "subject_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "username": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "MemberEvents": {
+                "type": "object",
+                "properties": {
+                    "member_events": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "members": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "member_events": {
+                "type": "array"
+            },
+            "members": {
+                "type": "array"
+            },
+            "MemberReport": {
+                "type": "object",
+                "properties": {
+                    "day": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "event_count": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "originator_group_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "parent_originator_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "year": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "MemberReports": {
+                "type": "object",
+                "properties": {
+                    "member_reports": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "member_reports": {
+                "type": "array"
+            },
+            "Memberresponse": {
+                "type": "object",
+                "properties": {
+                    "Member": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "member": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Members": {
+                "type": "object",
+                "properties": {
+                    "members": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "more_results": {
+                        "description": "",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "Newsletter": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "click_count": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "is_default": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "is_sent": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "total_click_count": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "unique_click_count": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "NewsletterInput": {
+                "type": "object",
+                "properties": {
+                    "click_count": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "is_default": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "is_sent": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "total_click_count": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "unique_click_count": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "Newsletterresponse": {
+                "type": "object",
+                "properties": {
+                    "Newsletter": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "newsletter": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Newsletters": {
+                "type": "object",
+                "properties": {
+                    "newsletters": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "newsletters": {
+                "type": "array"
+            },
+            "NewsletterSetting": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "banner_color": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "body_html": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "email_accent_color": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "email_day_of_week": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "email_hour": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "email_status": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "facebook_active_wall": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "facebook_day_of_week": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "facebook_hour": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "facebook_status": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "footer_email_font": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "footer_html": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "footer_image_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "group_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "header_background_color": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "header_image_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "intro_text": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "linkedin_active_wall": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "linkedin_day_of_week": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "linkedin_hour": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "linkedin_status": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "montage_enabled": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "montage_facebook_image_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "montage_linkedin_image_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "montage_title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "montage_twitter_image_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "newsletter_ids": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "newsletter_type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "primary_email_font": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "render_version": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "salutation_text": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "social_description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "social_posting_text": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "social_subtitle": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "social_title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "subject": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title_color": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "twitter_day_of_week": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "twitter_hour": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "twitter_status": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "newsletter_ids": {
+                "type": "array"
+            },
+            "Newslettersettingresponse": {
+                "type": "object",
+                "properties": {
+                    "NewsletterSetting": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "newsletter_setting": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "NewsletterSettings": {
+                "type": "object",
+                "properties": {
+                    "newsletter_settings": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "newsletter_settings": {
+                "type": "array"
+            },
+            "NewsletterSettingsInput": {
+                "type": "object",
+                "properties": {
+                    "NewsletterSetting": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "newsletter_setting": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "OrgSetting": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "company_address": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "company_contact_email": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "company_homepage_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "email_theme_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "is_default": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "privacy_policy_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "site_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "terms_and_conditions_url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "PersonalSettings": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Post": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "advisor_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "approval_status": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "approval_transactions": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "article_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "comment": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "display_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "display_summary": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "display_tag": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "external_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "external_url_source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "external_url_type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "group_ids": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "image_height": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "image_path": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "image_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "image_width": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "is_featured": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "is_mobile_proxy_needed": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "is_proxy_needed": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "is_published": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "is_responsive": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "logo_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "needs_sanitize": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "newsletter_ids": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "pdf_attachment_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "post_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "proxy_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "square_logo_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "suitability_score": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "summary": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "topic": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "updated_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "vestorly_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "video": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "video_id": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "approval_transactions": {
+                "type": "array"
+            },
+            "group_ids": {
+                "type": "array"
+            },
+            "PostInput": {
+                "type": "object",
+                "properties": {
+                    "advisor_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "approval_status": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "approval_transactions": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "article_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "comment": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "display_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "display_summary": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "display_tag": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "external_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "external_url_source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "external_url_type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "group_ids": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "image_height": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "image_path": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "image_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "image_width": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "is_featured": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "is_mobile_proxy_needed": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "is_proxy_needed": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "is_published": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "is_responsive": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "logo_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "needs_sanitize": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "newsletter_ids": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "pdf_attachment_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "post_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "proxy_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "square_logo_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "suitability_score": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "summary": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "topic": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "updated_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "vestorly_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "video": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "video_id": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Postrequest": {
+                "type": "object",
+                "properties": {
+                    "PostInput": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "post": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Postresponse": {
+                "type": "object",
+                "properties": {
+                    "Post": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "post": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Posts": {
+                "type": "object",
+                "properties": {
+                    "posts": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "posts": {
+                "type": "array"
+            },
+            "Session": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "current_user": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "new_user": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "settings": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "vestorly-auth": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "current_user": {
+                "type": "object"
+            },
+            "settings": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "adv_brochure": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "company": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "disclosure": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "Features": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "feature": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "OrgSetting": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "orgsetting": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "PersonalSettings": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "personalsetting": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "picture_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "website": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "SessionLogoutResponse": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Source": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "custom_rss_feed": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "enabled": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "logo_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "rss_publisher": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "SourceInput": {
+                "type": "object",
+                "properties": {
+                    "custom_rss_feed": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "enabled": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "logo_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "rss_publisher": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Sourceresponse": {
+                "type": "object",
+                "properties": {
+                    "Source": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Sources": {
+                "type": "object",
+                "properties": {
+                    "sources": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "sources": {
+                "type": "array"
+            },
+            "TruncatedMember": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "added_on": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "first_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "picture_url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "User": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "company": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "first_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "new_user": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "picture_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "plan_expired": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "plan_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "plan_setup": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "plan_status": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "plan_stripe": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "show_tour": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "user_type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "username": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "website": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
