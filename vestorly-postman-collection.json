@@ -1,0 +1,1743 @@
+{
+    "id": "f70d40d77f71e8f9249c9b39eaebcd75",
+    "name": "Vestorly",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "e5062fec7c22c995ed3960b92f7957ff",
+            "name": "Get Advisors",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/advisors\/{id}",
+            "description": "Returns a single advisor given their ID",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "Advisor Id to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "23db705371ae83ef44b6f66b124dc979",
+            "name": "Get Articles",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/articles",
+            "description": "Returns all articles",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit on the number of articles to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "text_query",
+                    "description": "Search query parameter",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort_direction",
+                    "description": "Direction of sort (used with sort_by parameter)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort_by",
+                    "description": "Field on model to sort by",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "08bed30f682588f16d8f5c52408431ec",
+            "name": "Get Articles",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/articles\/{id}",
+            "description": "Returns a single article",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "Advisor Id to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "762076d3f83d5a5167e6f4d357776fdb",
+            "name": "Get Events",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/events",
+            "description": "Returns all events",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "92a253019f140513f678c82a6751b9e1",
+            "name": "Post Events",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/events",
+            "description": "Creates a new event in the system",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "event",
+                    "description": "Event",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "ac06d2392e280fca4e8667554be7168f",
+            "name": "Get Events",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/events\/{id}",
+            "description": "Returns a single event if the user has access",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Advisor Id to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "3e3f1abe4609c236d3495b0f20fd28eb",
+            "name": "Get Groups",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/groups",
+            "description": "Returns all groups",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "2d30c9444ef677519f19a0d44b7e3945",
+            "name": "Post Groups",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/groups",
+            "description": "Creates a new Group",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group",
+                    "description": "Group to add",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "9e9e51373d8081699e9d492cff3f88fa",
+            "name": "Delete Groups",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/groups\/{id}",
+            "description": "Deletes a Group",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "Advisor Id to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "5a5f08a500665f431b7dbf68326a4974",
+            "name": "Get Groups",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/groups\/{id}",
+            "description": "Returns a single group if user has access",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "Advisor Id to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "4711e42be2675ae9b41c8fd82bc5453a",
+            "name": "Put Groups",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/groups\/{id}",
+            "description": "Updates a Group",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "Advisor Id to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group",
+                    "description": "Group to add",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "f97f90144390085e5d281fbda0bc9736",
+            "name": "Get Member Events",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/member_events",
+            "description": "Returns all MemberEvents",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "d4c50500ba8b503e962154cbf5823245",
+            "name": "Get Member Reports",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/member_reports",
+            "description": "Returns all member reports",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "228dcff22637d80d968dda700fdc8b40",
+            "name": "Get Members",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/members",
+            "description": "Returns all members",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start",
+                    "description": "Skips number of members from start",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit on the number of articles to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "16cd6b62fef416b785ae1fd855cb9884",
+            "name": "Post Members",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/members",
+            "description": "Create a new member in the Vestorly Platform",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "member",
+                    "description": "Member you want to create",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "606cddd9f33c6d7ed4f588ec3e6a88f2",
+            "name": "Get Members",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/members\/{id}",
+            "description": "Returns a single member",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Advisor Id to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "f5b08cbfa824f3db278e440ff7445bf9",
+            "name": "Put Members",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/members\/{id}",
+            "description": "Updates a single member",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Advisor Id to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "member",
+                    "description": "Member you want to create",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "5acea52bcab063a0d07553b8052bd3ab",
+            "name": "Get Newsletter Settings",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/newsletter_settings",
+            "description": "Returns all newsletter settings",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "21b18f7a19e3e526a929d7a261b130d5",
+            "name": "Get Newsletter Settings",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/newsletter_settings\/{id}",
+            "description": "Returns a single newsletter settings if the user has access",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Advisor Id to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "0e5da5492aff918386d9176b78d1d32b",
+            "name": "Put Newsletter Settings",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/newsletter_settings\/{id}",
+            "description": "Update a single newsletter setting by ID",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Advisor Id to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newsletter_setting",
+                    "description": "newsletter settings",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "61c769fa030d2dba1342c3e22763fd2b",
+            "name": "Get Newsletters",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/newsletters",
+            "description": "Returns all newsletters",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "2eb43fcfcb78eba49ec827e01abcfcba",
+            "name": "Get Newsletters",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/newsletters\/{id}",
+            "description": "Get a newsletter by ID",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "Advisor Id to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "b5c833b62ebdb7c6a8d9731c94e2343b",
+            "name": "Put Newsletters",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/newsletters\/{id}",
+            "description": "Updates a newsletter",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "Advisor Id to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newsletter",
+                    "description": "Newsletter",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "4c1dbc9943dddefa76e068fbfbf302a8",
+            "name": "Get Posts",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/posts",
+            "description": "Query all posts",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "text_query",
+                    "description": "Search query parameter",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "external_url",
+                    "description": "Filter by External URL",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "is_published",
+                    "description": "Filter by is_published boolean",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "e2e4aca16a088dd6a5ff5fa3e913c498",
+            "name": "Add Post",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/posts",
+            "description": "Create a new post in the Vestorly Platform",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "post",
+                    "description": "Post you want to create",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "276186ec65a48e09f001f17581589d57",
+            "name": "Get Post",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/posts\/{id}",
+            "description": "Query all posts",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "Advisor Id to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "a0621becbf760b22fff25dfa6d7acf81",
+            "name": "Update Post",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/posts\/{id}",
+            "description": "Update A Post",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "Advisor Id to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "post",
+                    "description": "Post you want to create",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "1faf85a7d0bcdd5fc08c30c40799706c",
+            "name": "Post Sessions",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/sessions",
+            "description": "Login To Vestorly Platform",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "username",
+                    "description": "Username in the vestorly platform",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "password",
+                    "description": "Password in Vestorly Platform",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "d350ef5f862ff35c4ed4223d798238c1",
+            "name": "Delete Sessions",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/sessions\/{id}",
+            "description": "Logout of the vestorly platform",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "Advisor Id to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "ec8ac5d1a13cf5955e5786e61e0d6aa3",
+            "name": "Get Sources",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/sources",
+            "description": "Returns all sources",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "07038173f6ff0b724dd2bd41b410b60b",
+            "name": "Post Sources",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/sources",
+            "description": "Create source",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "source",
+                    "description": "Source",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "eed8076b74b09baf87714f6ad4edbede",
+            "name": "Get Sources",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/sources\/{id}",
+            "description": "Get Source By ID",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "Advisor Id to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        },
+        {
+            "id": "1de40a5fb622a7170b787ff30a4d0a02",
+            "name": "Put Sources",
+            "url": "httpsstaging.vestorly.com\/api\/v2\/sources\/{id}",
+            "description": "Update Source By ID",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "vestorly",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "OAuth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "Advisor Id to fetch",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "source",
+                    "description": "Source",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vestorly_auth",
+                    "description": "Vestorly Auth Token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f70d40d77f71e8f9249c9b39eaebcd75",
+            "rawModeData": ""
+        }
+    ]
+}
