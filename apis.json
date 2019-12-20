@@ -1,0 +1,114 @@
+{
+    "name": "Vestorly",
+    "description": "",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/vestorly.png",
+    "tags": [
+        "content",
+        "have api",
+        "have swagger",
+        "new",
+        "relative data",
+        "service api"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/vestorly\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Vestorly",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/vestorly.png",
+            "humanURL": "http:\/\/vestorly.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/vestorly.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/vestorly-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/vestorly-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Vestorly API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/vestorly.png",
+            "humanURL": "http:\/\/vestorly.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/vestorly-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/vestorly-api-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/vestorly-api-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Developers",
+            "url": "https:\/\/www.vestorly.com\/enterprise\/api\/"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/vestorly"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28528-2019-09-03-18-48-32.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28528-2019-09-04-07-16-04.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28528-2019-09-04-08-24-55.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28528-2019-09-04-08-25-12.json"
+        },
+        {
+            "type": "Pricing",
+            "url": "https:\/\/www.vestorly.com\/pricing\/"
+        },
+        {
+            "type": "Security",
+            "url": "https:\/\/www.vestorly.com\/enterprise\/security\/"
+        },
+        {
+            "type": "Support",
+            "url": "https:\/\/www.vestorly.com\/enterprise\/support\/"
+        },
+        {
+            "type": "Support",
+            "url": "https:\/\/www.vestorly.com\/blog\/"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/www.twitter.com\/vestorly"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/vestorly.com"
+        }
+    ]
+}
