@@ -1,5 +1,5 @@
 {
-    "id": "c99caf84016e57c5d51e4bd0f3845eb9",
+    "id": "3de94bd7eb3ccb592623b89979ee883a",
     "name": "Vestorly API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "0fc806d80ee0105fd9de86f5a62701fd",
+            "id": "1bbc040be8c64c88f0e94b471fded029",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/advisors\/{id}",
             "description": "Returns a single advisor given their ID",
@@ -44,11 +44,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "e170467d697edd4b3c345436491fe5fb",
+            "id": "aff2baf45cd228fd5191442009cb2e45",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/articles",
             "description": "Returns all articles",
@@ -103,11 +103,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "4dd1fa80c4bcc2c9874f4f64352d66b4",
+            "id": "9104ab6aa0d9c60a7d47b0624362473f",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/articles\/{id}",
             "description": "Returns a single article",
@@ -141,11 +141,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "992d6f4d8ff2209ffaf7a90086a1f1af",
+            "id": "c6cca2129db01f2b188fdebb71eb1812",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/events",
             "description": "Returns all events",
@@ -172,11 +172,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "be6757e9749493044257fe4dee55b6a7",
+            "id": "38ee895aaf981b527724941f104c71fe",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/events",
             "description": "Creates a new event in the system",
@@ -203,11 +203,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "56583d33b3d678ba5df675938a68307b",
+            "id": "7e811741dd1d0783e9c07ec5f8b04993",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/events\/{id}",
             "description": "Returns a single event if the user has access",
@@ -241,11 +241,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "2ba8aa44e5ad845e3803f2d320ce3e98",
+            "id": "fd40db95048ec32dccc4354b33934ed8",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/groups",
             "description": "Returns all groups",
@@ -272,11 +272,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "6406eefe52368554c38cbbd20d6d86c6",
+            "id": "2e9e08588ce65ee57584515e33d9fc58",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/groups",
             "description": "Creates a new Group",
@@ -303,11 +303,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "32c7b2906a23014b9391e86f8b89f93e",
+            "id": "9c6ce3a176da9665241ef7bb9d1b7ede",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/groups\/{id}",
             "description": "Deletes a Group",
@@ -341,11 +341,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "6d0709e8c2f9c1578d4bef235829ad2f",
+            "id": "060c61c602f91ff0ce51ac0da4cc55f4",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/groups\/{id}",
             "description": "Returns a single group if user has access",
@@ -379,11 +379,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "cac171104592aab8a8961e55f6cac308",
+            "id": "6cf964a204f12e647873c26636c3b82d",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/groups\/{id}",
             "description": "Updates a Group",
@@ -417,11 +417,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "4fb7b17fb0f5080480b6ea8008777d4f",
+            "id": "cd8be56d141eb4125540fe3cef98e8ce",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/member_events",
             "description": "Returns all MemberEvents",
@@ -448,11 +448,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "e59b58fc60e6e1a038f19632faac422e",
+            "id": "59748c378e4ad2ccae08045c3666487b",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/member_reports",
             "description": "Returns all member reports",
@@ -479,11 +479,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "1d82bfdc75777578769f388884d01f32",
+            "id": "c7a02fbe20b7161c4b66b51b2c952b35",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/members",
             "description": "Returns all members",
@@ -510,11 +510,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "ce75618f313984119b7b1d1fa3ee53b3",
+            "id": "a442cb0f00ac57b4f5e5014f8abda162",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/members",
             "description": "Create a new member in the Vestorly Platform",
@@ -541,11 +541,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "1789c80c65b6e1a71eede4693952913c",
+            "id": "b89af616f525a6b68d423330e5a53a56",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/members\/{id}",
             "description": "Returns a single member",
@@ -579,11 +579,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "0e3b239138a88f0f1d6355d7ed72d42a",
+            "id": "fbea1b8adcb36190e0ea55ad126a9b7e",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/members\/{id}",
             "description": "Updates a single member",
@@ -617,11 +617,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "b690415c2027f338639abf5c9863c0ea",
+            "id": "d10f657906e1a14fde7188b96ededd9c",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/newsletter_settings",
             "description": "Returns all newsletter settings",
@@ -648,11 +648,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "7d42ba439c418d068e6fe5e320b0ca8a",
+            "id": "1f048812290840a4eef18d94fc51b821",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/newsletter_settings\/{id}",
             "description": "Returns a single newsletter settings if the user has access",
@@ -686,11 +686,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "93f4993d82551feef33dd4f4931b48e0",
+            "id": "0761ba15e5b5ceea97b92a211f4200a8",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/newsletter_settings\/{id}",
             "description": "Update a single newsletter setting by ID",
@@ -724,11 +724,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "6856a536f63a1d8d199e4a61b30bc6b3",
+            "id": "0318911efa0382a174f9bfced7e2d1b1",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/newsletters",
             "description": "Returns all newsletters",
@@ -755,11 +755,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "de4a8a7a4f75667c8ade814f75e62540",
+            "id": "0a34594e1b6323e8a96c1b0b513396ab",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/newsletters\/{id}",
             "description": "Get a newsletter by ID",
@@ -793,11 +793,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "a78fb4e25be72872bfb160b6feba14bd",
+            "id": "f19dbfad810e75588ba144718818297d",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/newsletters\/{id}",
             "description": "Updates a newsletter",
@@ -831,11 +831,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "a496b04a82c87fe9f96f478475d60aa2",
+            "id": "1c7d1be5c1022ffc0b80fd1b391eee32",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/posts",
             "description": "Query all posts",
@@ -883,11 +883,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "04665eac6d99e2837f0f26f968804948",
+            "id": "73c6705bd4a7b6e19af09b11e7d89969",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/posts",
             "description": "Create a new post in the Vestorly Platform",
@@ -914,11 +914,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "537324574819659c45692ce19a8cbcc7",
+            "id": "9be822ac4f09014776105012f016eddf",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/posts\/{id}",
             "description": "Query all posts",
@@ -952,11 +952,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "5cb9e8fcb24b758f83e5efc3228c5740",
+            "id": "73f1141d891888e89f2a4c6e76472b15",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/posts\/{id}",
             "description": "Update A Post",
@@ -990,11 +990,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "a17f6963c8b82c43e3c2db28668a3e05",
+            "id": "1c6a981b9f8a9f0e1690a2d1c58d87d5",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/sessions",
             "description": "Login To Vestorly Platform",
@@ -1028,11 +1028,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "045b07d05b3d33dee4c57aacb43c60ef",
+            "id": "15ae9e514ddb7f42bb0bd516e8576a02",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/sessions\/{id}",
             "description": "Logout of the vestorly platform",
@@ -1066,11 +1066,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "06a0e60cf102d2543d6b9873fd0252ef",
+            "id": "a3abe6c20f07eff6e021db2167ec2ca4",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/sources",
             "description": "Returns all sources",
@@ -1097,11 +1097,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "cc1c72de601aa01daa1ce28c0d114610",
+            "id": "a71db89489f6db61ee26453fcb9cb120",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/sources",
             "description": "Create source",
@@ -1128,11 +1128,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "af7297093325e2161b3346c2a6557780",
+            "id": "0f9b15919eac9f43f21bd4b261b8e2f5",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/sources\/{id}",
             "description": "Get Source By ID",
@@ -1166,11 +1166,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         },
         {
-            "id": "e81f8206ed2de488ed0b70a40f4e7495",
+            "id": "ac204a95f19849165400ac742685680d",
             "name": "",
             "url": "http:\/\/staging.vestorly.com\/api\/v2\/sources\/{id}",
             "description": "Update Source By ID",
@@ -1204,7 +1204,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c99caf84016e57c5d51e4bd0f3845eb9",
+            "collectionId": "3de94bd7eb3ccb592623b89979ee883a",
             "rawModeData": ""
         }
     ]
